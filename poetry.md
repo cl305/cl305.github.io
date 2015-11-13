@@ -2,7 +2,7 @@
 layout: page
 permalink: /poetry/
 title: poetry
-description: Showcase your writing, short stories, or poems. Replace this text with your description.
+description: All Things Tech 
 ---
 
 <ul class="post-list">
