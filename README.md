@@ -1,82 +1,83 @@
-![Build Status](https://travis-ci.org/PanosSakkos/personal-jekyll-theme.svg?branch=master)
-[![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PanosSakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Jasper
 
-# { Personal } Jekyll Theme
+This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper). 
 
-{ Personal } is a free responsive Jekyll theme about you.
-It's your personal blog and your point of reference website.
-You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-theme/)!
+You might well ask at this point why bother making a new Casper's clone? 
+Although this is inspired by Kasper, there are several **additional** features which make this port closer 
+to the original theme. Besides, it was recently updated to match the current version of the theme.
 
-Have you published your own website by forking { Personal } and now you want to get the latest bug fixes and features from this repo into your website? Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/How-to-integrate-latest-bug-fixes-and-features-into-your-past-fork) out!
+**Important:**  For security reasons, Github doesn't allow plugins (under _plugins/) when deploying with Github Pages. This means 
+that we need to generate your site locally (as explained below) and push the resulting HTML to a Github repository. 
+This is exactly what I have done for the generating the live demo.
 
-## What value does { Personal } add
+## Live demo
 
-* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale) and [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme))
-  * Modern and minimal design
-    * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices
-    * Sweet animations
-    * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers
-  * Timeline
-    * Tell your story so far with a sleek timeline of dates, pictures and descriptions
-  * White on black text, making the reading experience tireless
-  * Google analytics  
-* Customization and control of your website and blog through the site config
-* Blogging functionality
-  * Preview of the latest post in the home page
-  * Archive page
-  * Pagination
-  * #tags
-  * Disqus comments
-  * Facebook, Twitter, Reddit, Linked In and Google Plus share buttons
-  * RSS feed
-* Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
-* Protection from Email harvesting
-* Forcing of https protocol
-* Cool (anti-procrastinating) 404 page
+[Jasper Live Demo](https://biomadeira.github.io/jasper)
 
-## { Personal } à la JekyllNow
+[Casper's Original Here](https://demo.ghost.io)
 
-Want to get { Personal } without messing with jekyll installations and terminal commands?
-
-  1. Fork the personal-jekyll-theme repository
-  2. Rename the forked repository to yourgithubusername.github.io
-  3. Visit https://yourgithubusername.github.io
-  4. Start modifying the _config.yml and editing your blog's posts from Github's online editor or a third party online editor (i.e. [Prose](https://prose.io/))
-
-## Documentation
-
-The theme contains documentation in the form of blog posts.
-Check it live [here](https://panossakkos.github.io/personal-jekyll-theme/blog/index.html)!
 
 ## Screenshots
-### Intro page
-![Intro](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
-###About
-![About](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/about.jpg)
-### Latest post preview
-![Blog](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/blog.jpg)
-### Life Events
-![Career](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/career.jpg)
-### Blog Archive
-![Archive](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/archive.jpg)
-### Post page
-![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/post.jpg)
-### \#Tags
-![Tags](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/tags.jpg)
-### 404
-![404](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/404.jpg)
 
-## How to run locally
+**Home page**
+![home page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen1.png)
 
-````
-./scripts/serve
-````
+**Post page**
+![post page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen2.png)
 
-## Wiki
-Don't forget to list your { Personal } blog in the [wiki](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D) 😉
+**Author page**
+![author page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen3.png)
 
-## Supporting the repo
+**Related posts page**
+![tag page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen4.png)
 
-Proposals, pull requests and issues are more than welcome, let's make the web a bit more beautiful and secure :wink:
+**Tags page with opened sidebar**
+![sidebar page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen5.png)
 
-In case you want to say thank you by donating Bitcoins 1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi
+**404 page**
+![related page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen6.png)
+
+## Jasper theme includes
+
+* Pagination
+* Author page **(New 07.02.2015)**
+* Tag page(s) **(New 07.02.2015)**
+* 404 page **(New 07.02.2015)**
+* Toggleable sliding sidebar **(New 07.02.2015)**
+* Related posts view **(New 30.10.2015)**
+* Tag description(s) **(New 30.10.2015)**
+* Rss
+* Google Analytics tracking
+* Code Syntax Highlight
+* Author's profile with picture
+* Disqus comments (not Ghost standard)
+
+## How to use it
+
+Simply clone this repository (*master branch*), and then run `jekyll serve` inside the directory. Upload the resulting 
+_site/ contents to your repository (*master branch* if uploading as your personal page (username.github.io) or *gh-pages branch* if uploading as a project page (like I did for the [demo](https://github.com/biomadeira/jasper/tree/gh-pages)).
+
+As discussed [here](https://github.com/biomadeira/jasper/issues/3), in order to properly generate author pages you need to rename the field *categories* in the front matter of every post to match that of your *username* as defined in the [\_config.yml](_config.yml) file.
+This probably means that with a bit of hacking you could in principle generate multiple author blogs...
+
+## Issues and contributing 
+
+I have tested this install with Ruby v2.2.2p95 (Mac OS RVM) and Jekyll v3.0.0. If you run into any problems please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
+
+Feel free pull-request your patches and fixes.
+
+## Thanks 
+
+Most of the work has been already done by the Ghost team and Rosario. Many thanks to them :smile:
+
+
+## Copyright & License
+
+Copyright (C) 2015 - Released under the MIT License.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
