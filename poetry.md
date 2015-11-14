@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /poetry/
-title: poetry
-description: All Things Tech 
+title: All Things Tech
+description: Geek Galore 
 ---
 
 <ul class="post-list">
