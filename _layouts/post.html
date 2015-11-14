@@ -1,50 +1,66 @@
----
-layout: default
----
 
-<header class="header-post">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <div class="post-heading">
-        <h1>{{ page.title }}</h1>
-        {% if page.subtitle %}
-        <h2 class="post-subheading">{{ page.subtitle }}</h2>
-        {% endif %}
-        <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+<!-- Post Layout Start -->
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body>
+
+    <script type="text/javascript" src="{{site.baseurl}}/js/hammer.min.js"></script>
+
+    {% include navigation.html %}
+
+    <section id="post" class="container content-section text-center">
+      <div class="row">
+        <div id="post" class="col-lg-10 col-lg-offset-1">
+
+          <h1><strong>{{ page.title }}</strong></h1>
+          <h4><strong>{{ page.date | date_to_string }}</strong>
+            <small> . {{ page.category }} . <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
+            {% for tag in page.tags %}
+              <a href="{{site.baseurl}}/tags/{{tag}}.html">#{{ tag }}</a>
+            {% endfor %}
+            </small>
+          </h4>
+
+          {{ page.content | markdownify }}
+
+          {% include share.html %}
+
+          {% include comments.html %}
+
+        </div>
       </div>
-     </div>
-  </div>
-</header>
+    </section>
 
-<article>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	  {{ content }}
-	</div>
-  </div>
-</article>
+    <section class="container content-section text-center">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          {% include social-buttons.html %}
+        </div>
+      </div>
+    </section>
 
-<div class="row">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    <ul class="pager blog-pager">
-      {% if page.previous.url %}
-      <li class="previous">
-        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-      </li>
-      {% endif %}
-      {% if page.next.url %}
-      <li class="next">
-        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-      </li>
-      {% endif %}
-    </ul>
-  </div>
-</div>
+    {% include footer.html %}
 
-{% if page.comments %}
-<div class="row disqus-comments">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    {% include disqus.html %}
-  </div>
-</div>
-{% endif %}
+    {% include js.html %}
+
+    <script>
+      var post = document.getElementById('post');
+
+      new Hammer(post).on('swipeleft', function(event) {
+        alert('Hello world of left swipping! :)');
+      });
+
+      new Hammer(post).on('swiperight', function(event) {
+        alert('Hello world of right swipping! :)');
+      });
+
+    </script>
+
+  </body>
+</html>
+
+<!-- Post Layout End -->

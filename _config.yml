@@ -1,144 +1,132 @@
-# --- Serving options --- #
 
-# url is the full website URL
-# baseurl is the website's URL without the hostname
+# Site settings
 
-# If you are building a simple GitHub user page (username.github.io) then use these settings:
-url: "http://cl305.github.io"
+url: "https://panossakkos.github.io"
 baseurl: ""
+google-tracking-id: "UA-35880426-3"
+force-https: True
 
-# If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
+pages_list:
+  About: 'about'
+  Blog: 'latest-post'
+  Timeline: 'timeline'
+  Contact: 'contact'
 
-# Of course don't forget to change the username and projectname to YOUR username and project
+#############
+# HTML Head #
+#############
 
-# Name of website
-title: Cody Li
+author: "Panos Sakkos"
+lang: "en"
+title: "{ Panos Sakkos }"
+favicon: "/img/favicon.ico"
+description: "Blog of Panos Sakkos, blogging mainly about tech. Opinions expressed are mine."
+keywords: "panos, sakkos, technology, computer science, Pwn Mail, WriteRight, UoA, di, CERN, MDCN, Microsoft, Office Graph, Machine Learning, Databases, jekyll"
 
-# Short description of your site
-description: A virtual proof that name is awesome!
+################
+# Intro layout #
+################
 
-# --- Navigation bar options --- #
+black-favicon: "/img/black-lab-glass.ico"
+background-img: "../img/intro-bg.jpg"
+me-img: "/img/me.jpg"
 
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+##############################
+# Dynamic Text on the header #
+##############################
 
-# List of links in the navigation bar
-navbar-links:
-  Home: ""
-  About Me: "aboutme"
-  Contact: "contact"
-  
-# --- Footer options --- #
+dynamic-typing: True
+shuffle: Flase	# Shuffle the lines.
+loop: False
+loop-count:	1 # Set False for infinite loop, or set any number for finite loop.
+type-speed:	4		# Default 10
+start-delay: 2000	# Default 200
+delete-delay: 50000	# Default 5000
+lines:			# You can add HTML Tags in the Text
+  - text: "Why so serious?"
 
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
-author:
-  name: Cody Li
-  email: "cody.li@duke.edu"
-  facebook: Cody Li  # eg. daattali
-  github: cl305    # eg. daattali
-  twitter: yourname   # eg. daattali
-  linkedin: https://www.linkedin.com/in/cody-li-1127b9a4  # eg. "pub/dean-attali/8/946/143"
-  stackoverflow: yourlink  # eg. "users/3943160/daattali"
- 
-# Select which links to show in the footer
-footer-links-active:
-  rss: false
-  facebook: false
-  email: true
-  twitter: false
-  github: true
-  linkedin: true
-  stackoverflow: false
+########
+# Blog #
+########
 
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-# url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+post-preview-words: 96
 
-# --- Misc --- #
-
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: codyli
-
-# Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
-
-# --- Don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
-markdown: kramdown
-highlighter: pygments
-permalink: /:year-:month-:day-:title
 paginate: 5
 
-# Default YAML values (more information on Jekyll's site)
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: true  # add comments to all blog posts
-  -
-    scope:
-      path: "" # all files
-    values:
-      layout: "default"
+fb-share: True
+twitter-share: True
+reddit-share: True
+linkedin-share: False
+google-plus-share: False
+disqus-shortname: "panossakkos"
 
-# Exclude these files from production site
-exclude:
-  - CNAME
-  - LICENSE
-  - README.md
+###############
+# Life Events #
+###############
 
-# prose.io config
-prose:
-  rooturl: '_posts'
-  media: 'img'
-  ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
-  
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+events:
+  - image: "/img/career/microsoft.jpg"
+    date: "September 2014 - Today"
+    description: "Software Engineer @ Microsoft Development Center Norway, working @ the <a href=\"https://dev.office.com/officegraph\" target=\"_blank\"> Office Graph</a>"
+  - image: "/img/career/microsoft.jpg"
+    date: "June 2013 - September 2013"
+    description: "Software Engineering Intern @ Microsoft Development Center Norway, worked @ the <a href=\"https://dev.office.com/officegraph\" target=\"_blank\"> Office Graph</a>"
+  - image: "/img/career/uoa.jpg"
+    date: "October 2012 - August 2014"
+    description: "Master studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Software Engineering + <a href=\"https://scholar.google.com/citations?user=UtV6LFYAAAAJ&amp;hl=en&amp;oi=ao\" target=\"_blank\">Machine Learning researcher</a> @ <a href=\"http://kddlab.di.uoa.gr\" target=\"_blank\">KDD</a> lab"
+  - image: "/img/career/cern.jpg"
+    date: "October 2011 - September 2012"
+    description: "Security researcher @ <a href=\"https://www.cern.ch\" target=\"_blank\">CERN</a>, developed linux kernel extensions to prevent cyber attacks"
+  - image: "/img/career/pwnmail.jpg"
+    date: "June 2010 - November 2010"
+    description: "Created <a href=\"https://www.google.com/search?q=pwn+mail\" target=\"_blank\">Pwn Mail</a>, a Cydia iPhone app for spoofing emails. It served &gt; 260,000 emails but it was discontinued after a legal threat by Steve Jobs"
+  - image: "/img/career/uoa.jpg"
+    date: "October 2007 - September 2011"
+    description: "Bachelor studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Computer Science and Telecomunications"
+
+# First image of the Career timeline
+career-img: "/img/career/default.jpg"
+
+##################
+# Contact layout #
+##################
+
+email: "panoss@microsoft.com"
+
+##################
+# Social Buttons #
+##################
+
+social:
+  - title: "github"
+    url: "https://github.com/PanosSakkos"
+  - title: "linkedin"
+    url: "https://no.linkedin.com/in/PanosSakkos"
+  - title: "twitter"
+    url: "https://twitter.com/thepanoss"
+  - title: "bitcoin"
+    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+  - title: "rss"
+    url: "/feed.xml"
+
+############
+# 404 page #
+############
+
+404-img: "/img/labtocat.png"
+
+################################################################################
+
+# Tread carefully if you want to change the variables bellow this point!
+
+# Pagination path
+paginate_path: "blog/page:num"
+
+# Enable minification SASS
+sass:
+  style: compressed
+
+# Exclusion list from the generated _site
+exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
+
+gems: [jekyll-paginate]
