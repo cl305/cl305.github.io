@@ -1,132 +1,120 @@
-
 # Site settings
+protocol: "https:"
+domain: "prashantsolanki3.github.io"
+url: "https://prashantsolanki3.github.io"
+title: "{ Prashant Solanki }"
+favicon: "/img/favicon.ico"
+black-favicon: "/img/black-lab-glass.ico"
+google-tracking-id: "UA-55643409-4"
+disqus-shortname: "prashantsolanki3"
+soundcloud_layout_type: "2"
+permalink: /blog/:categories/:title/
 
-url: "https://panossakkos.github.io"
-baseurl: ""
-google-tracking-id: "UA-35880426-3"
-force-https: True
+
+github-info:
+  handle: "prashantsolanki3"
+  repo-desc-char-limit: 50
+  repo-display-limit: 2
+
+# Navigation bar links
+# Blog link in the blog and post pages will point to the blog.html#blog
+# In the default page it will point to the preview of the last post
 
 pages_list:
   About: 'about'
-  Blog: 'latest-post'
-  Timeline: 'timeline'
+  Music: 'music'
+  Repos: "repos"
+  Blog: 'blog'
+  Career: 'career'
   Contact: 'contact'
-
-#############
-# HTML Head #
-#############
-
-author: "Panos Sakkos"
-lang: "en"
-title: "{ Panos Sakkos }"
-favicon: "/img/favicon.ico"
-description: "Blog of Panos Sakkos, blogging mainly about tech. Opinions expressed are mine."
-keywords: "panos, sakkos, technology, computer science, Pwn Mail, WriteRight, UoA, di, CERN, MDCN, Microsoft, Office Graph, Machine Learning, Databases, jekyll"
-
-################
-# Intro layout #
-################
-
-black-favicon: "/img/black-lab-glass.ico"
-background-img: "../img/intro-bg.jpg"
-me-img: "/img/me.jpg"
 
 ##############################
 # Dynamic Text on the header #
 ##############################
 
 dynamic-typing: True
-shuffle: Flase	# Shuffle the lines.
-loop: False
-loop-count:	1 # Set False for infinite loop, or set any number for finite loop.
-type-speed:	4		# Default 10
-start-delay: 2000	# Default 200
-delete-delay: 50000	# Default 5000
+shuffle: True	# Shuffle the lines.
+loop: True	
+loop-count:	False #Set False for infinite loop, or set any number for finite loop.
+type-speed:	10		#Default 10
+start-delay: 200	#Default 200
+delete-delay: 5000	#Default 5000
 lines:			# You can add HTML Tags in the Text
-  - text: "Why so serious?"
+- text: "The lower you fall, the higher you'll fly."
+- text: "May the wind under your wings bear you where the sun sails and the moon walks."
+- text: "Some people never go crazy. What truly horrible lives they must lead."
+- text: "Where’s your will to be weird?"
 
-########
-# Blog #
-########
+background-img: ""
 
-post-preview-words: 96
+# About variables
 
-paginate: 5
+me-img: "/img/me.jpg"
+me-img-alt-text: "Prashant Solanki"
+# Blog variables
+paginate: 15
+
+paginate_path: "blog/page:num"
+
+post-preview-words: 64
 
 fb-share: True
 twitter-share: True
 reddit-share: True
-linkedin-share: False
-google-plus-share: False
-disqus-shortname: "panossakkos"
 
-###############
-# Life Events #
-###############
+# Career variables
 
 events:
-  - image: "/img/career/microsoft.jpg"
-    date: "September 2014 - Today"
-    description: "Software Engineer @ Microsoft Development Center Norway, working @ the <a href=\"https://dev.office.com/officegraph\" target=\"_blank\"> Office Graph</a>"
-  - image: "/img/career/microsoft.jpg"
-    date: "June 2013 - September 2013"
-    description: "Software Engineering Intern @ Microsoft Development Center Norway, worked @ the <a href=\"https://dev.office.com/officegraph\" target=\"_blank\"> Office Graph</a>"
-  - image: "/img/career/uoa.jpg"
-    date: "October 2012 - August 2014"
-    description: "Master studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Software Engineering + <a href=\"https://scholar.google.com/citations?user=UtV6LFYAAAAJ&amp;hl=en&amp;oi=ao\" target=\"_blank\">Machine Learning researcher</a> @ <a href=\"http://kddlab.di.uoa.gr\" target=\"_blank\">KDD</a> lab"
-  - image: "/img/career/cern.jpg"
-    date: "October 2011 - September 2012"
-    description: "Security researcher @ <a href=\"https://www.cern.ch\" target=\"_blank\">CERN</a>, developed linux kernel extensions to prevent cyber attacks"
-  - image: "/img/career/pwnmail.jpg"
-    date: "June 2010 - November 2010"
-    description: "Created <a href=\"https://www.google.com/search?q=pwn+mail\" target=\"_blank\">Pwn Mail</a>, a Cydia iPhone app for spoofing emails. It served &gt; 260,000 emails but it was discontinued after a legal threat by Steve Jobs"
-  - image: "/img/career/uoa.jpg"
-    date: "October 2007 - September 2011"
-    description: "Bachelor studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Computer Science and Telecomunications"
-
+  - image: "/img/career/kakcho.jpg"
+    image-alt-text: "Kakcho"
+    date: "March 2015 - Today"
+    description: "Head Developer @ <a href=\"http://kakcho.com\" target=\"_blank\">Kakcho</a>, working on Kakcho Android Application."
+  - image: "/img/career/phoenix.jpg"
+    date: "November 2014 - March 2015"
+    description: "Created Phoenix Framework to make Mobile Application of Wordpress Blogs"
+  - image: "/img/career/avyam.jpg"
+    image-alt-text: "Avyam Technologies"
+    date: "June 2014 - August 2014"
+    description: "Internship @ <a href=\"http://http://www.avyamtechnologies.com\" target=\"_blank\">Avyam Technologies</a>, Android App Development"
+  - image: "/img/career/gift-paradise.jpg"
+    image-alt-text: "Gift Paradise"
+    date: "March 2014 - June 2014"
+    description: "Created Gift Paradise Android Application."
+  - image: "/img/career/msit.jpg"
+    image-alt-text: "Maharaja Surajmal Institute of Technology"
+    date: "2013 - Pursuing"
+    description: "Bachelor studies @ Maharaja Surajmal Institute of Technology, in Computer Science Branch"
+  - image: "/img/career/bbps.jpg"
+    image-alt-text: "Bal Bharati Public School"
+    date: "2013"
+    description: "CBSE XII Board @ Bal Bharati Public School"
+  - image: "/img/career/bbps.jpg"
+    image-alt-text: "Bal Bharati Public School"
+    date: "2011"
+    description: "CBSE X @ Bal Bharati Public School"
 # First image of the Career timeline
 career-img: "/img/career/default.jpg"
+career-img-alt-text: "Prashant Solanki's Career"
 
-##################
-# Contact layout #
-##################
-
-email: "panoss@microsoft.com"
-
-##################
-# Social Buttons #
-##################
-
+# Social networks variables (many more available: facebook, flickr, dribbble, pinterest, instagram, tumblr etc.)
 social:
-  - title: "github"
-    url: "https://github.com/PanosSakkos"
-  - title: "linkedin"
-    url: "https://no.linkedin.com/in/PanosSakkos"
-  - title: "twitter"
-    url: "https://twitter.com/thepanoss"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
   - title: "rss"
     url: "/feed.xml"
-
-############
-# 404 page #
-############
+  - title: "github"
+    url: "https://github.com/prashantsolanki3"
+  - title: "linkedin"
+    url: "http://in.linkedin.com/in/prashantsolanki3"
+  - title: "bitbucket"
+    url: "https://bitbucket.org/prashantsolanki"
+  - title: "soundcloud"
+    url: "https://soundcloud.com/prashantsolanki"
 
 404-img: "/img/labtocat.png"
-
-################################################################################
-
-# Tread carefully if you want to change the variables bellow this point!
-
-# Pagination path
-paginate_path: "blog/page:num"
-
-# Enable minification SASS
-sass:
-  style: compressed
 
 # Exclusion list from the generated _site
 exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
 
-gems: [jekyll-paginate]
+
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from

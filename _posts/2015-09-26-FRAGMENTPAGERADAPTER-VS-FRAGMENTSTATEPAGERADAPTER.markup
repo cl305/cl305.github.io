@@ -1,0 +1,33 @@
+---
+layout: post
+section-type: post
+title: "FragmentPagerAdapter vs FragmentStatePagerAdapter"
+category: Android
+comments: true
+tags: [ 'FragmentPagerAdapter', 'FragmentStatePagerAdapter', 'Android', 'ViewPager' ]
+description: "FragmentPagerAdapter and FragmentStatePagerAdapter are two adapter that are used with ViewPager class to display sliding fragments on an android device. Both FragmentPagerAdapter and FragmentStatePagerAdapter are subclasses of PagerAdapter. ViewPager is a kind of Layout manager."
+author: "Prashant Solanki"
+keywords: "FragmentPagerAdapter, FragmentStatePagerAdapter, Android, ViewPager, Prashant Solanki, Github"
+---
+
+<strong>FragmentPagerAdapter</strong> and <strong>FragmentStatePagerAdapter</strong> are two adapter that are used with ViewPager class to display sliding fragments on an android device. Both FragmentPagerAdapter and FragmentStatePagerAdapter are subclasses of PagerAdapter. ViewPager is a kind of Layout manager. It provides the functionality to flip fragments left and right. Both FragmentPagerAdapter and FragmentStatePagerAdapter populates the data in the ViewPager, to facilitate its working. 
+The main difference lies in the utilization of memory. With this basic information in mind let's go on to understand the technical aspects of both the adapters.  <strong>FragmentPagerAdapter</strong> To display sliding fragments two methods are used  
+
+* getCount
+* getItem
+
+This version of adapter is best suited if you have a small number of fragments to be displays. Static fragments are preferred in FragmentPagerAdapter, such as a set of tabs, as dynamic fragments also contribute much to the memory. These limitations are due to the fact that all the fragments of FragmentPagerAdapter are kept in the memory. Fragment's view Hierarchy may be destroyed but it will still remain in the memory. Hence it is advised to use this Android FragmentPagerAdapter only when there are low number of static fragments, since all fragments would be kept in the memory and this would result in increased memory heap. Which could result a slow running app. 
+
+<strong>FragmentStatePagerAdapter</strong> FragmentStatePagerAdapter is also a subclass of PagerAdapter it has exactly same function like FragmentStatePager the difference lies in memory management. To display sliding fragments two methods are used 
+
+* getCount
+* getItem
+
+
+The main functionality for which FragmentStatePagerAdapter is used is to populate a large number of fragments in ViewPager, it destroys the fragment when it is not visible to the user and only savedInstanceState bundle of the fragment is kept in memory. This way a lower amount of memory is used and a better performance is delivered in case of dynamic fragments.
+
+
+| FragmentPagerAdapter | FragmentStatePagerAdapter |
+| ------------- |-------------|
+| This should be used when we need to store the whole fragment in memory.| This should be used when we have to use dynamic fragments, like fragments with widgets, as their data could be stored in the savedInstanceState |
+| It is advised to use FragmentPagerAdapter only when there are low number of fragments | It wont affect the performance even if there are large number of fragments. |
