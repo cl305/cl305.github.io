@@ -45,6 +45,12 @@
 
      {% endif %}
 
+     {% if page.section-type == "tech-post" %} 
+
+      {% include tech-post.html %}
+
+     {% endif %}
+
   {% endfor %}      
 
 
