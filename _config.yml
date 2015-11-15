@@ -24,7 +24,7 @@ pages_list:
   #Music: 'music'
   Repos: "repos"
   Blog: 'blog'
-  Tech: "tech"
+  #Tech: "tech"
   Career: 'career'
   Contact: 'contact'
 
@@ -55,7 +55,7 @@ paginate: 15
 
 paginate_path: "blog/page:num"
 
-post-preview-words: 64
+post-preview-words: 32
 
 fb-share: True
 twitter-share: True
