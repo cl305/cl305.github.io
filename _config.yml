@@ -25,7 +25,7 @@ pages_list:
   Repos: "repos"
   Blog: 'blog'
   #Tech: "tech"
-  Career: 'career'
+  Timeline: 'career'
   Contact: 'contact'
 
 ##############################
