@@ -42,10 +42,8 @@ delete-delay: 5000	#Default 5000
 lines:			# You can add HTML Tags in the Text
 - text: "Hey, I'm Cody."
 - text: "They don't think it be like it is, but it do. - Oscar Gamble"
-- text: "Hi Gabe!!!!!!!!!!"
 
-
-background-img: ""
+background-img: "meOld.jpg"
 
 # About variables
 
