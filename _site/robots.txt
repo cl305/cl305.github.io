@@ -1,9 +1,0 @@
-User-agent: *
-Disallow: /404.html
-Disallow: /about.html
-Disallow: /career.html
-Disallow: /contact.html
-Disallow: /repos.html
-
-
-Sitemap: https://cl305.github.io/sitemap.xml
