@@ -1,16 +1,22 @@
-        <div class="row text-center">
-            <section class="notepad-post-share">
-                <a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;{{ page.title }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.owner.twitter }}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a class="google-icon" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
-                    <i class="fa fa-google-plus"></i>
-                </a>
-            </section>
-        </div>
+<div>
+{% if site.fb-share %}
+  <div style="float:left; padding: 0 5px; vertical-align:top">
+    <div class="fb-share-button" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count"></div>
+  </div>
+{% endif %}
+
+{% if site.twitter-share %}
+  <div style="float:left; padding: 0 5px; vertical-align:top">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }} {% for tag in page.tags%}#{{ tag }} {% endfor %}"></a>
+</div>
+{% endif %}
+
+{% if site.reddit-share %}
+  <div style="float:left; padding: 0 5px; vertical-align:top">
+    <script type="text/javascript">reddit_newwindow='1'</script>
+    <script type="text/javascript">reddit_title='{{ page.title }}'</script>
+    <script type="text/javascript">reddit_url='{{ site.url }}/{{ page.url }}'</script>
+    <script type="text/javascript" src="//www.redditstatic.com/button/button1.js"></script>
+  </div>
+{% endif %}
+</div>
