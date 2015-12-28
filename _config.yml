@@ -47,7 +47,7 @@ background-img: ""
 
 # About variables
 
-me-img: "/img/me.jpg"
+me-img: "/img/me2.jpg"
 me-img-alt-text: "Cody Li"
 # Blog variables
 paginate: 15
@@ -63,6 +63,11 @@ reddit-share: True
 # Career variables
 
 events:
+  - image: "/img/career/colab.png"
+    image-alt-text: "Duke Studies"
+    date: "Nov 2015 - present"
+    description: "Duke Studies project, iOS Programmer"
+
   - image: "/img/career/dukeRoboticsRS.png"
     image-alt-text: "Duke Robotics"
     date: "Sept 2015 - present"
