@@ -46,7 +46,7 @@ background-img: ""
 
 # About variables
 
-me-img: "/img/me2.jpg"
+me-img: "/img/career/cody.png"
 me-img-alt-text: "Cody Li"
 # Blog variables
 paginate: 15
@@ -80,7 +80,7 @@ events:
   - image: "/img/career/dukePratt.jpeg"
     image-alt-text: "Duke Research"
     date: "Jun 2015 - December 2015"
-    description: "Undergraduate engineering researcher, computer architecture"   
+    description: "Undergraduate researcher, computer architecture"   
 
   - image: "/img/career/dukeRS.jpg"
     image-alt-text: "Duke University"
