@@ -37,16 +37,21 @@ shuffle: False # Shuffle the lines.
 loop: True	
 loop-count:	False #Set False for infinite loop, or set any number for finite loop.
 type-speed:	10		#Default 10
-start-delay: 200	#Default 200
-delete-delay: 5000	#Default 5000
+start-delay: 100	#Default 200
+delete-delay: 1000	#Default 5000
 lines:			# You can add HTML Tags in the Text
-- text: "Hi, I'm Cody!"
+- text: "Hey I'm Cody! I'm passionate about..."
+- text: "Data engineering"
+- text: "iOS development"
+- text: "Financial technology"
+- text: "Education"
+- text: "and Photography."
 
 background-img: ""
 
 # About variables
 
-me-img: "/img/career/cody.png"
+me-img: "/img/cody3.png"
 me-img-alt-text: "Cody Li"
 # Blog variables
 paginate: 15
@@ -62,48 +67,38 @@ reddit-share: True
 # Career variables
 
 events:
-	- image: "/img/career/c1200x200.png"
-		image-alt-text: "Capital One"
-		date: "Jun 2017 - Aug 2017"
-		description: "Data engineering intern"
-	
-	- image: "/img/career/hackduke320x320.jpg" 
-		image-alt-text: "HackDuke"
-		date: "March 2016 - Present"
-		description: "Organizer, HackDuke"
-	
+  - image: "/img/career/c1200x200.png"
+    image-alt-text: "Capital One"
+    date: "Jun 2017 - Aug 2017"
+    description: "Capital One, Data engineering intern"
+
+  - image: "/img/career/hackduke320x320.jpg"
+    image-alt-text: "HackDuke"
+    date: "March 2016 - present"
+    description: "HackDuke, organizer" 
+
   - image: "/img/career/dukeRoboticsRS.png"
     image-alt-text: "Duke Robotics"
-    date: "Sept 2015 - December 2016"
+    date: "Sept 2015 - Dec 2016"
     description: "Duke Robotics, electronics specialist"
-
-  - image: "/img/career/dukePratt.jpeg"
-    image-alt-text: "Duke Research"
-    date: "Jun 2015 - December 2015"
-    description: "Undergraduate researcher, computer architecture"   
 
   - image: "/img/career/dukeRS.jpg"
     image-alt-text: "Duke University"
     date: "Aug 2014 - present"
     description: "B.S. Computer Science"
 
-  - image: "/img/career/gswRS.jpg"
-    image-alt-text: "Governor's School of North Carolina"
-    date: "June 2014 - Jul 2014"
-    description: "Governor's School West - Mathematics"
-
 # First image of the Career timeline
-career-img: "/img/career/duke400x400.jpeg"
+career-img: "/img/career/cody.png"
 career-img-alt-text: "Cody's Timeline"
-
 # Social networks variables (many more available: facebook, flickr, dribbble, pinterest, instagram, tumblr etc.)
+
 social:
   - title: "github"
     url: "https://github.com/cl305"
   - title: "linkedin"
     url: "https://www.linkedin.com/in/cody-li-1127b9a4"
-	- title: "instagram"
-		url: "instagram.com/cody_li"
+  - title: "instagram"
+    url: "instagram.com/cody_li"
 
   
 404-img: "/img/404.gif"

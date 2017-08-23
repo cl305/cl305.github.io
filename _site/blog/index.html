@@ -8,9 +8,9 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <meta name="keywords" content="" />
-    <link rel="canonical" href="https://cl305.github.io/blog/">
+    <link rel="canonical" href="http://localhost:4000/blog/">
     
-    <title>[ Cody Li ]  | Blog</title>
+    <title>Cody Li  | Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -59,7 +59,7 @@ if ((window.location.protocol != "https:")&&(window.location.hostname=="cl305.gi
             
               <a class="navbar-brand page-scroll" href="/index.html#page-top">
             
-            <div><img src="/img/favicon-space-shuttle.ico" alt="">  [ Cody Li ]</div>
+            <div><img src="/img/favicon-space-shuttle.ico" alt="">  Cody Li</div>
           </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -93,7 +93,7 @@ if ((window.location.protocol != "https:")&&(window.location.hostname=="cl305.gi
                   
                     
                       <li>
-                        <a class="page-scroll" href="/#career"> Career </a>
+                        <a class="page-scroll" href="/#career"> Timeline </a>
                       </li>
                     
                   
@@ -116,13 +116,9 @@ if ((window.location.protocol != "https:")&&(window.location.hostname=="cl305.gi
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
 
-      <h2 id="blog">Blog</h2>
+      <p>##Blog</p>
 
 
-      
-        <h4 align="left"><strong>14 Nov 2015</strong> <small>. Test .</small> <a href="/blog/test/Very%20long%20test%20post/"> <strong>Stephen Curry's 2015 MVP Speech (Really Long Test Post) </strong> </a> <small><a href="/blog/test/Very%20long%20test%20post/#disqus_thread">Comments</a></small></h4>
-      
-        <h4 align="left"><strong>14 Nov 2015</strong> <small>. Test .</small> <a href="/blog/test/Test%20Post/"> <strong>Kevin Durant's 2014 MVP Speech (Test Post) </strong> </a> <small><a href="/blog/test/Test%20Post/#disqus_thread">Comments</a></small></h4>
       
 
       <!-- Pagination links -->
@@ -148,6 +144,8 @@ if ((window.location.protocol != "https:")&&(window.location.hostname=="cl305.gi
   
     <li><a href="https://www.linkedin.com/in/cody-li-1127b9a4" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
   
+    <li><a href="instagram.com/cody_li" target="_blank"><i class="fa fa-instagram fa-fw"></i></a></li>
+  
 </ul>
 
       </div>
@@ -157,7 +155,8 @@ if ((window.location.protocol != "https:")&&(window.location.hostname=="cl305.gi
      <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy;  2015</p>
+            <p>"{ Personal }" Jekyll theme by Panos Sakkos </p> 
+            <p> Copyright &copy;  2017</p>
         </div>
     </footer>
 	    <p><br /><br /><br /><br /><br /><br /></p>
@@ -360,9 +359,15 @@ $( document ).ready(function() {
 
 var myQuotes =  new Array();
 
-      myQuotes.push("Hey, I'm Cody.");
+      myQuotes.push("Hey I'm Cody! I'm passionate about...");
  
-      myQuotes.push("They don't think it be like it is, but it do. - Oscar Gamble");
+      myQuotes.push("Data engineering");
+ 
+      myQuotes.push("iOS development");
+ 
+      myQuotes.push("Financial technology");
+ 
+      myQuotes.push("Education");
  
 
 function shuffle(array) {
@@ -389,8 +394,8 @@ function shuffle(array) {
   $(".intro-text").typed({
                 strings: myQuotes,
                 typeSpeed: 10,
-                backDelay: 5000,
-                startDelay: 200,
+                backDelay: 1000,
+                startDelay: 100,
                 loop: true,
                 loopCount: false,
                 cursorChar: "|"
